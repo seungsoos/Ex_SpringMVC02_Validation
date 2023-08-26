@@ -25,6 +25,7 @@ public class ValidationItemControllerV4 {
 
     private final ItemRepository itemRepository;
 
+    // 저장, 수정 객체 DTO를 분리 사용
     @GetMapping
     public String items(Model model) {
         List<Item> items = itemRepository.findAll();
